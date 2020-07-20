@@ -6,9 +6,7 @@ export type ReferenceTypes = UnknownObject | UnknownFunction;
 
 export type PrimaryTypes = ValueTypes | ReferenceTypes;
 
-export interface UnknownObject {
-  [key: string]: unknown;
-}
+export type UnknownObject = Record<string | number | symbol, unknown>;
 
 export interface UnknownFunction {
   (...args: unknown[]): unknown;
