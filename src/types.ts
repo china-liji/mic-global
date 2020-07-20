@@ -1,8 +1,8 @@
 import { HTMLProps } from 'react';
 
-export type ValueTypes = string | number | bigint | boolean | symbol | undefined;
+export type ValueTypes = string | number | bigint | boolean | symbol | undefined | null;
 
-export type ReferenceTypes = UnknownObject | UnknownFunction;
+export type ReferenceTypes = UnknownObject | UnknownFunction | unknown[];
 
 export type PrimaryTypes = ValueTypes | ReferenceTypes;
 
