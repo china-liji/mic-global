@@ -1,6 +1,6 @@
 {
   "name": "mic-global",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "keywords": [],
   "main": "build/lib/index.js",
