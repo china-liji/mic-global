@@ -23,11 +23,15 @@ export enum FontSize {
 
   E4 = '1.4em',
 
-  E5 = '1.6em',
+  E5 = '1.5em',
 
-  E6 = '1.8em',
+  E6 = '1.6em',
 
-  E7 = '2.4em',
+  E7 = '1.8em',
+
+  E8 = '2em',
+
+  E9 = '2.4em',
 
   H1 = '2.4rem',
 
