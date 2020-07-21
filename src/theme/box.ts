@@ -1,26 +1,25 @@
-// 1rem 为正常的 10px
 export enum Spacing {
   /**
-   * 基础空间大小，一般用于 root rem，即 html 的 font-size
+   * Root size, usually represents font size of the 'html' element
    */
   Root = '0.715vw',
 
   /**
-   * 默认空间大小，一般用于定义 body 的 font-size
+   * Default size, usually represents font size of the 'body' element
    */
   Default = '0.85vw',
 
   /**
-   * 零
+   * Zero
    */
   Z = '0',
 
   /**
-   * 仅用于 1px 的边框宽度
+   * Only for border width
    */
   BW = '1px',
 
-  // 0.1em ~ 0.99em 为 ES
+  // 0.1em ~ 0.99em for ES
   ES1 = '0.2em',
 
   ES2 = '0.4em',
@@ -29,39 +28,42 @@ export enum Spacing {
 
   ES4 = '0.8em',
 
-  // 1rem ~ 1.99rem 为 E
-  E1 = '1em',
+  // 1rem ~ 1.99rem for EM
+  EM1 = '1em',
 
-  E2 = '1.2em',
+  EM2 = '1.2em',
 
-  E3 = '1.3em',
+  EM3 = '1.3em',
 
-  E4 = '1.4em',
+  EM4 = '1.4em',
 
-  E5 = '1.5em',
+  EM5 = '1.5em',
 
-  E6 = '1.6em',
+  EM6 = '1.6em',
 
-  E7 = '1.8em',
+  EM7 = '1.8em',
 
-  E8 = '2em',
+  // 2rem+ for EL
+  EL1 = '2em',
 
-  E9 = '2.4em',
+  EL2 = '2.4em',
 
-  // H1 ~ H6 标签字体大小
-  H1 = E9,
+  EL3 = '3.6em',
 
-  H2 = E7,
+  // font size of h1 ~ h6 tag
+  H1 = EL2,
 
-  H3 = E6,
+  H2 = EM7,
 
-  H4 = E4,
+  H3 = EM6,
 
-  H5 = E3,
+  H4 = EM4,
 
-  H6 = E2,
+  H5 = EM3,
 
-  // 0.1rem ~ 0.99rem 为 RXS
+  H6 = EM2,
+
+  // 0.1rem ~ 0.99rem for RXS
   RXS1 = '0.2rem',
 
   RXS2 = '0.3rem',
@@ -72,7 +74,7 @@ export enum Spacing {
 
   RXS5 = '0.8rem',
 
-  // 1rem ~ 1.99rem 为 RS
+  // 1rem ~ 1.99rem for RS
   RS1 = '1rem',
 
   RS2 = '1.2rem',
@@ -83,7 +85,7 @@ export enum Spacing {
 
   RS5 = '1.8rem',
 
-  // 2rem ~ 4.99rem 为 RM
+  // 2rem ~ 4.99rem for RM
   RM1 = '2rem',
 
   RM2 = '2.4rem',
@@ -94,7 +96,7 @@ export enum Spacing {
 
   RM5 = '4.8rem',
 
-  // 5rem ~ 9.999rem 为 RL
+  // 5rem ~ 9.999rem for RL
   RL1 = '5.6rem',
 
   RL2 = '6.8rem',
@@ -105,7 +107,7 @@ export enum Spacing {
 
   RL5 = '8rem',
 
-  // 10rem ~ 19.99rem 为 RXL
+  // 10rem ~ 19.99rem for RXL
   RXL1 = '10rem',
 
   RXL2 = '12rem',
@@ -114,14 +116,14 @@ export enum Spacing {
 
   RXL4 = '18rem',
 
-  // 20rem ~ 20.99rem 为 RXXL
+  // 20rem ~ 20.99rem for RXXL
   RXXL1 = '20rem',
 
   RXXL2 = '26rem',
 
   RXXL3 = '28rem',
 
-  // 30rem ~ ?rem 为 RXXL
+  // 30rem ~ ?rem for RXXL
   RXXXL1 = '30rem',
 
   RXXXL2 = '36rem',
@@ -130,31 +132,34 @@ export enum Spacing {
 
   RXXXL4 = '46rem',
 
-  // 像素值
-  P1 = '12px',
+  // 10px ~ 19.9px for PM
+  PM1 = '10px',
 
-  P2 = '13px',
+  PM2 = '12px',
 
-  P3 = '14px',
+  PM3 = '13px',
 
-  P4 = '16px',
+  PM4 = '14px',
 
-  P5 = '18px',
+  PM5 = '16px',
 
-  P6 = '24px',
+  PM6 = '18px',
 
-  P7 = '36px',
+  // 20px+ for PL
+  PL1 = '24px',
 
-  P8 = '48px',
+  PL2 = '36px',
 
-  P9 = '60px',
+  PL3 = '48px',
 
-  // 黄金比例
+  PL4 = '60px',
+
+  // golden ratio
   G1 = '38.2%',
 
   G2 = '61.8%',
   
-  // 百分比
+  // percent
   PER1 = '5%',
 
   PER2 = '10%',

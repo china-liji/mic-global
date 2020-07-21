@@ -1,8 +1,13 @@
 {
   "name": "mic-global",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "theme",
+    "component",
+    "global",
+    "mic"
+  ],
   "main": "build/lib/index.js",
   "module": "build/es/index.js",
   "unpkg": "build/dist/antd.min.js",
