@@ -2,7 +2,7 @@ export * from './component/block-component';
 export * from './component/inline-component';
 export * from './component/types';
 
-export * from './theme/box';
+export * from './theme/length';
 export * from './theme/color';
 export * from './theme/index';
 export * from './theme/level';

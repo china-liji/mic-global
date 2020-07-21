@@ -1,49 +1,49 @@
 import { createStyles } from '.';
-import { Spacing } from './box';
+import { Percent, EM, Pixel, DFS } from './length';
 import { Black } from './color';
 import { Screen } from './screen';
 
 export const useAppStyles = createStyles({
   '@global': {
     '*': {
-      margin: Spacing.Z,
-      padding: Spacing.Z,
+      margin: 0,
+      padding: 0,
     },
     html: {
-      fontSize: Spacing.Root,
+      fontSize: DFS.Html,
       color: Black.L2,
     },
     body: {
-      fontSize: Spacing.Default,
+      fontSize: DFS.Body,
       fontFamily: 'arial',
     },
     'html, body, body > article, body > article > div': {
-      height: Spacing.PER8,
+      height: Percent.M1,
     },
     h1: {
-      fontSize: Spacing.H1,
+      fontSize: EM.H1,
     },
     h2: {
-      fontSize: Spacing.H2,
+      fontSize: EM.H2,
     },
     h3: {
-      fontSize: Spacing.H3,
+      fontSize: EM.H3,
     },
     h4: {
-      fontSize: Spacing.H4,
+      fontSize: EM.H4,
     },
     h5: {
-      fontSize: Spacing.H5,
+      fontSize: EM.H5,
     },
     h6: {
-      fontSize: Spacing.H6,
+      fontSize: EM.H6,
     },
     [`@media screen and (max-width: ${Screen.MinWidth}px)`]: {
       html: {
-        fontSize: Spacing.PM1,
+        fontSize: Pixel.M1,
       },
       body: {
-        fontSize: Spacing.PM2,
+        fontSize: Pixel.M2,
       },
     },
   },
