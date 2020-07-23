@@ -1,20 +1,20 @@
 import { createUseStyles } from 'react-jss';
 import { Black } from './color';
-import { UseStyles, Classes, CreateUseStyles, Styles, Options, StylesData } from './types';
+import { UseStyles, Classes, CreateUseStyles, Options, StylesData, Styles, StylesSet } from './types';
 
 export const createStyles = (
-  (arg1: string | Styles, arg2?: Styles | Options, opts?: Options): UseStyles => {
+  (arg1: string | StylesSet, arg2?: Styles | Options, opts?: Options): UseStyles => {
     const hasOrignalClassName = typeof arg1 === 'string';
-    const options = hasOrignalClassName ? opts : arg2 as Options; 
     const originalClassName = hasOrignalClassName ? arg1 as string : '';
 
-    const styles = (
-      hasOrignalClassName ?
-        { [originalClassName]: arg2 } :
-        arg1
-    ) as Styles;
-
-    const originalUseStyles = createUseStyles(styles, options);
+    const originalUseStyles = createUseStyles(
+      (
+        hasOrignalClassName ?
+          { [originalClassName]: arg2 } :
+          arg1
+      ) as Parameters<typeof createUseStyles>[0],
+      hasOrignalClassName ? opts : arg2 as Options
+    );
 
     const useStyles = (data?: StylesData | string, className?: string): Classes | string => {
       let styles: Classes;

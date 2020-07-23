@@ -2355,8 +2355,8 @@ jss-preset-default@^10.3.0:
 
 jss@^10.3.0:
   version "10.3.0"
-  resolved "https://registry.npm.taobao.org/jss/download/jss-10.3.0.tgz?cache=0&sync_timestamp=1591797915988&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjss%2Fdownload%2Fjss-10.3.0.tgz#2cf7be265f72b59c1764d816fdabff1c5dd18326"
-  integrity sha1-LPe+Jl9ytZwXZNgW/av/HF3RgyY=
+  resolved "https://registry.npmjs.org/jss/-/jss-10.3.0.tgz#2cf7be265f72b59c1764d816fdabff1c5dd18326"
+  integrity sha512-B5sTRW9B6uHaUVzSo9YiMEOEp3UX8lWevU0Fsv+xtRnsShmgCfIYX44bTH8bPJe6LQKqEXku3ulKuHLbxBS97Q==
   dependencies:
     "@babel/runtime" "^7.3.1"
     csstype "^2.6.5"
