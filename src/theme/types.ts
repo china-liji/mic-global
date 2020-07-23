@@ -1,12 +1,12 @@
 import { createUseStyles } from 'react-jss';
-import { Styles as JssStyles } from 'jss';
+import { JssStyle } from 'jss';
 import { UnknownFunction, UnknownObject } from '../types';
 
 export type Classes = ReturnType<ReturnType<typeof createUseStyles>>;
 
-export type Styles = JssStyles | ((...args: unknown[]) => JssStyles);
+export type Style = JssStyle | ((...args: unknown[]) => JssStyle);
 
-export type StylesSet = Parameters<typeof createUseStyles>[0];
+export type Styles = Parameters<typeof createUseStyles>[0];
 
 export type Options = Parameters<typeof createUseStyles>[1];
 
@@ -21,6 +21,6 @@ export interface UseStyles<T = string | Classes> {
 }
 
 export interface CreateUseStyles {
-  (originalClassName: string, styles: Styles, options?: Options): UseStyles<string>;
-  (styles: StylesSet, options?: Options): UseStyles<Classes>;
+  (originalClassName: string, styles: Style, options?: Options): UseStyles<string>;
+  (styles: Styles, options?: Options): UseStyles<Classes>;
 }
