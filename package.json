@@ -1,6 +1,6 @@
 {
   "name": "mic-global",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "",
   "keywords": [
     "theme",
@@ -23,6 +23,7 @@
     "lint-all": "eslint --ext .tsx,.ts src/",
     "prebuild": "npm run es",
     "prees": "npm run lib",
+    "prelib": "rm -rf ./build",
     "prepare": "npm run build",
     "start": "webpack-dev-server"
   },
