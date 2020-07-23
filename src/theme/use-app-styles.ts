@@ -17,7 +17,7 @@ export const useAppStyles = createStyles({
       fontSize: DFS.Body,
       fontFamily: 'arial',
     },
-    'html, body, body > article, body > article > div': {
+    'html, body, body > article': {
       height: Percent.M1,
     },
     h1: {
