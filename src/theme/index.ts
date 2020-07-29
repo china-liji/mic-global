@@ -1,9 +1,9 @@
 import { createUseStyles } from 'react-jss';
 import { Black } from './color';
-import { UseStyles, Classes, CreateUseStyles, Options, StylesData, Style, Styles } from './types';
+import { UseStyles, Classes, CreateUseStyles, Options, StylesData, Style, Styles, CreateStyle } from './types';
 
 export const createStyles = (
-  (arg1: string | Styles, arg2?: Style | Options, opts?: Options): UseStyles => {
+  (arg1: string | Styles, arg2?: Style | CreateStyle | Options, opts?: Options): UseStyles => {
     const hasOrignalClassName = typeof arg1 === 'string';
     const originalClassName = hasOrignalClassName ? arg1 as string : '';
 
