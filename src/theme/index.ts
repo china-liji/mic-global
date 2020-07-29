@@ -28,7 +28,7 @@ export const createStyles = (
       }
 
       if (hasOrignalClassName) {
-        return className ? `${styles[originalClassName]} ${className}` : styles[originalClassName];
+        return `${styles[originalClassName]} ${originalClassName}` + (className ? ` ${className}` : '');
       }
 
       if (className) {
