@@ -11,9 +11,6 @@
     "target": "es5",
     "baseUrl": "./src",
     "skipLibCheck": true,
-    "paths": {
-      "@/*": ["*"]
-    },
   },
   "include": [
     "src"
