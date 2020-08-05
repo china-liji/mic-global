@@ -11,7 +11,7 @@ export const useAppStyles = createStyles({
     },
     html: {
       fontSize: DFS.Html,
-      color: Black.L4,
+      color: Black.L5,
     },
     body: {
       fontSize: DFS.Body,
