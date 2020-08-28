@@ -85,7 +85,7 @@ export enum REM {
 
   S6 = '1.6rem',
 
-  S7 = '1.7rem',
+  S7 = '1.8rem',
 
   // 2rem ~ 4.99rem for M
   M1 = '2rem',
